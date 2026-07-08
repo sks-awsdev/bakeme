@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bake Controller</title>
+
+    <meta name="description" content="Bake Controller Dashboard">
+    <meta name="theme-color" content="#2b6cff">
+
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo-section">
+
+            <img
+                src="assets/logo.png"
+                alt="Calixto Systems"
+                class="logo">
+
+            <div>
+
+                <h1>Bake Controller</h1>
+
+                <p class="subtitle">
+                    Calixto Systems
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="gateway-card">
+
+            <div class="status-row">
+
+                <span class="status-dot online"></span>
+
+                <span id="gatewayStatus">
+                    Gateway Online
+                </span>
+
+            </div>
+
+            <div class="ip-address">
+
+                192.168.0.105
+
+            </div>
+
+            <div
+                id="currentDateTime"
+                class="datetime">
+
+                --:--:--
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN GRID
+    ========================== -->
+
+    <main class="dashboard-grid">
+
+
+
+        <!-- =====================
+             STATUS CARD
+        ====================== -->
+
+        <section class="card status-card">
+
+            <h2>
+                Remaining Time
+            </h2>
+
+            <div
+                id="remainingTime"
+                class="remaining-time">
+
+                00:00:00
+
+            </div>
+
+            <div class="status-list">
+
+                <div class="status-item">
+
+                    <span>
+
+                        Relay
+
+                    </span>
+
+                    <span
+                        id="relayStatus"
+                        class="badge green">
+
+                        OFF
+
+                    </span>
+
+                </div>
+
+                <div class="status-item">
+
+                    <span>
+
+                        Power
+
+                    </span>
+
+                    <span
+                        id="powerStatus"
+                        class="badge green">
+
+                        ONLINE
+
+                    </span>
+
+                </div>
+
+                <div class="status-item">
+
+                    <span>
+
+                        Bake
+
+                    </span>
+
+                    <span
+                        id="bakeStatus"
+                        class="badge blue">
+
+                        STOPPED
+
+                    </span>
+
+                </div>
+
+                <div class="status-item">
+
+                    <span>
+
+                        Started
+
+                    </span>
+
+                    <span
+                        id="startedTime">
+
+                        --:--
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
