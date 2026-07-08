@@ -175,4 +175,211 @@
 
             </div>
 
+        </section>        <!-- =====================
+             BAKE CONTROL CARD
+        ====================== -->
+
+        <section class="card control-card">
+
+            <h2>Bake Control</h2>
+
+            <div class="input-grid">
+
+                <div class="input-box">
+
+                    <label for="hours">
+                        Hours
+                    </label>
+
+                    <div class="number-control">
+
+                        <button
+                            type="button"
+                            id="hoursMinus"
+                            class="step-btn">
+                            −
+                        </button>
+
+                        <input
+                            id="hours"
+                            type="number"
+                            value="1"
+                            min="0"
+                            max="24">
+
+                        <button
+                            type="button"
+                            id="hoursPlus"
+                            class="step-btn">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label for="minutes">
+                        Minutes
+                    </label>
+
+                    <div class="number-control">
+
+                        <button
+                            type="button"
+                            id="minutesMinus"
+                            class="step-btn">
+                            −
+                        </button>
+
+                        <input
+                            id="minutes"
+                            type="number"
+                            value="15"
+                            min="0"
+                            max="59">
+
+                        <button
+                            type="button"
+                            id="minutesPlus"
+                            class="step-btn">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="button-group">
+
+                <button
+                    id="startBtn"
+                    class="start-btn">
+
+                    ▶ START BAKE
+
+                </button>
+
+                <button
+                    id="stopBtn"
+                    class="stop-btn">
+
+                    ■ STOP BAKE
+
+                </button>
+
+            </div>
+
+
+            <div class="estimated-finish">
+
+                <span>
+
+                    Estimated Finish
+
+                </span>
+
+                <strong id="finishTime">
+
+                    --:--
+
+                </strong>
+
+            </div>
+
         </section>
+                <!-- =====================
+             POWER LOGS CARD
+        ====================== -->
+
+        <section class="card logs-card">
+
+            <div class="card-header">
+
+                <h2>Last 10 Power Events</h2>
+
+                <span class="live-indicator">
+
+                    ● Live
+
+                </span>
+
+            </div>
+
+            <div class="table-container">
+
+                <table id="powerLogTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Time</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>--:--:--</td>
+                            <td>
+                                <span class="badge gray">
+                                    Waiting...
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                No power events available
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+
+            © 2026 Calixto Systems
+
+        </p>
+
+        <p>
+
+            Bake Controller v1.0
+
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
+        
